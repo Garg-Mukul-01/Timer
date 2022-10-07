@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(244, 245, 247);
+}
+#main-heading{
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 4rem;
+}
+.container-timer{
+    width: 50%;
+    height:50vh;
+    transform: translate(50%,20%);
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(150%);
+}
+input[type="number"]{
+    padding: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    width:30%;
+    text-align: center;
+}
+.inputs>span{
+    font-size: 3rem;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(20vh);
+}
+button{
+    margin: 5px 10px;
+    padding: 10px 35px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border:none;
+    background-color: rgb(192, 191, 191);
+}
+
+.show-timer-container{
+    text-align: center;
+    font-size: 10rem;
+    margin-top: 8vh;
+}
+
+/* media queries */
+@media screen and (max-width:450px) {
+    #main-heading{
+        text-align: center;
+        margin-top: 2.5vh;
+        font-size: 2rem;
+    }
+    .container-timer{
+        width: 50%;
+        /* border: 1px solid red; */
+        height:50vh;
+        transform: translate(50%,20%);
+    }
+    .inputs{
+        /* border: 1px solid yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(120%);
+    }
+    input[type="number"]{
+        padding: 0.8rem;
+        border: none;
+        font-size: 1rem;
+        width:30%;
+        text-align: center;
+    }
+    .inputs>span{
+        font-size: 1.8rem;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(10vh);
+    }
+    button{
+        margin: 5px 10px;
+        padding: 10px 35px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border-radius: 5px;
+        border:none;
+        background-color: rgb(216, 212, 212);
+    }
+    
+    .show-timer-container{
+        text-align: center;
+        font-size: 7rem;
+        margin-top: 8vh;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Timer</title>
+</head>
+
+<body>
+    <h1 id="main-heading">!! Timer !!</h1>
+    <div class="container-timer" id="container-timer">
+        <div class="inputs">
+            <input type="number" placeholder="MM" id="min"><span>:</span>
+            <input type="number" placeholder="SS" id="sec">
+        </div>
+        <div class="buttons">
+            <button id="start-btn" onclick=start()>Start</button>
+        </div>
+    </div>
+
+    <!-- // Show timer section  -->
+
+    <div class="show-timer-container" id="show-timer-container">
+        <span id="mn">0</span><span id="colon"> : </span><span id="sc">0</span>
+        <div class="buttons">
+            <button id="reset-btn" onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
