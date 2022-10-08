@@ -13,8 +13,8 @@
     <h1 id="main-heading">!! Timer !!</h1>
     <div class="container-timer" id="container-timer">
         <div class="inputs">
-            <input type="number" placeholder="MM" id="min"><span>:</span>
-            <input type="number" placeholder="SS" id="sec">
+            <input type="number" placeholder="MM" id="min" maxlength="2"  max="59" min="0"><span>:</span>
+            <input type="number" placeholder="SS" id="sec" maxlength="2"  max="59" min="0">
         </div>
         <div class="buttons">
             <button id="start-btn" onclick=start()>Start</button>
@@ -24,7 +24,7 @@
     <!-- // Show timer section  -->
 
     <div class="show-timer-container" id="show-timer-container">
-        <span id="mn">0</span><span id="colon"> : </span><span id="sc">0</span>
+        <span id="mn"></span><span id="colon"></span><span id="sc"></span>
         <div class="buttons">
             <button id="reset-btn" onclick="reset()">Reset</button>
         </div>
