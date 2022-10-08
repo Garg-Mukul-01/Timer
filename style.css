@@ -105,7 +105,7 @@ button {
   }
 }
 
-@media screen and (max-width: 290px) {
+@media screen and (max-width: 400px) {
     #main-heading {
       text-align: center;
       margin-top: 2.5vh;
